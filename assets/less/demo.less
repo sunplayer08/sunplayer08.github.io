@@ -1,4 +1,9 @@
 /** new-demo base on semantic **/
+
+body{
+  padding: 8px;
+}
+
 .flex-container {
   display: flex;
   flex-direction: column;
@@ -12,9 +17,12 @@
 }
 
 .character-container,
-.party-buff-container {
+.party-buff-container,
+.area-type-container,
+.target-container,
+.damage-container{
   display: flex;
-  padding: 0 16px 16px 16px;
+  padding: 16px;
   margin: 16px;
   border: 2px solid #777;
   position: relative;
@@ -22,6 +30,10 @@
   .party-buff-one-col{
     display: flex;
     margin-top: 16px;
+    
+    &.unchecked{
+      opacity: 0.5;
+    }
   }
 
   .container-title {
@@ -52,6 +64,9 @@
     &.av004 {
       background-image: url(../images/004.png);
     }
+    &.av005 {
+      background-image: url(../images/005.png);
+    }
   }
 
   .ui.selection.dropdown.choose-elite {
@@ -65,6 +80,7 @@
 }
 
 .party-buff-container{
+  padding-top: 0;
   flex-direction: column;
 }
 
