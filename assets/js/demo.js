@@ -36,4 +36,5 @@ $(document).ready(function () {
   $('.ui.dropdown.choose-potential').dropdown();
   $('.ui.dropdown.choose-skill').dropdown();
   $('.ui.dropdown.choose-skill-level').dropdown();
+  $('.checkbox').checkbox()
 });
