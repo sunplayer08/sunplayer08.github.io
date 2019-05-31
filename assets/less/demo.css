@@ -37,7 +37,7 @@ body {
 .area-type-container .party-buff-one-col.unchecked,
 .target-container .party-buff-one-col.unchecked,
 .damage-container .party-buff-one-col.unchecked {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 .character-container .container-title,
 .party-buff-container .container-title,
