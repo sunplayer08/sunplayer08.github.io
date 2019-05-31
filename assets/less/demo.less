@@ -1,88 +1,52 @@
-.main-character,
-.party-buff,
-.party-debuff,
-.place-type{
-  height: 104px;
+/** new-demo base on semantic **/
+.flex-container{
   display: flex;
-  padding: 8px 0;
-
-  .demo-label,
-  .demo-part {
-    display: flex;
-    flex-direction: column;
-
-    &:before,
-    &:after {
-      content: " ";
-      flex: 1;
-    }
-    
-    .flex{
-      display: flex;
-    }
+  flex-direction: column;
+  margin-left: 16px;
+  
+  &:before,
+  &:after{
+    content: "";
+    flex: 1;
   }
-
-  .demo-label {
-    padding-left: 16px;
-  }
-
-  .avatar {
-    width: 80px;
-    height: 80px;
-    background: #f0f3;
-    
-    &.pt{
-      background-image: url(../images/001.png);
-      background-size: 100%;
-    }
-    &.av002{
-      background-image: url(../images/002.png);
-      background-size: 100%;
-    }
-    &.av003{
-      background-image: url(../images/003.png);
-      background-size: 100%;
-    }
-    &.av004{
-      background-image: url(../images/004.png);
-      background-size: 100%;
-    }
-  }
-
-  select,
-  input[type=text] {
-    cursor: pointer;
-    word-wrap: break-word;
-    line-height: 1em;
-    white-space: normal;
-    outline: 0;
-    -webkit-transform: rotateZ(0);
-    transform: rotateZ(0);
-    min-width: 14em;
-    min-height: 2.71428571em;
+}
+.character-container {
+  display: flex;
+  padding: 16px;
+  margin: 16px;
+  border: 2px solid #777;
+  position: relative;
+  
+  .container-title{
     background: #fff;
-    display: inline-block;
-    padding: .78571429em 2.1em .78571429em 1em;
-    color: rgba(0, 0, 0, .87);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    border: 1px solid rgba(34, 36, 38, .15);
-    border-radius: .28571429rem;
-    -webkit-transition: width .1s ease, -webkit-box-shadow .1s ease;
-    transition: width .1s ease, -webkit-box-shadow .1s ease;
-    transition: box-shadow .1s ease, width .1s ease;
-    transition: box-shadow .1s ease, width .1s ease, -webkit-box-shadow .1s ease;
+    position: absolute;
+    top: -10px;
+    left: 12px;
+    color: #777;
+    padding: 0 8px;
   }
-
-  input {
-    text-align: right;
-    min-width: 3em;
+  
+  .avatar {
+    height: 75px;
+    width: 75px;
+//    margin-right: 8px;
+    background: #3337;
+    background-size: 100%;
+    
+    &.av001{
+      background-image: url(../images/001.png);
+    }
   }
-
-  input[type=checkbox] {}
+  
+  .ui.selection.dropdown.choose-elite{
+    min-width: 10.5em;
+  }
+  .ui.selection.dropdown.choose-potential,
+  .ui.selection.dropdown.choose-skill-level{
+    min-width: 8.5em;
+  }
 }
 
-.body-label {
-  padding-left: 16px;
-  font-size: 18px;
+input[type=number] {
+  width: 5em;
 }
