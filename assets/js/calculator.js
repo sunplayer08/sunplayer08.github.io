@@ -130,9 +130,9 @@ $(document).ready(function () {
     ]
   };
 
-  if (option1 && typeof option1 === "object") {
-    chart1.setOption(option1, true);
-  }
+//  if (option1 && typeof option1 === "object") {
+//    chart1.setOption(option1, true);
+//  }
   
   var dom = document.getElementById("chart2");
   var chart2 = echarts.init(dom);
@@ -243,9 +243,9 @@ $(document).ready(function () {
     ]
   };
 
-  if (option2 && typeof option2 === "object") {
-    chart2.setOption(option2, true);
-  }
+//  if (option2 && typeof option2 === "object") {
+//    chart2.setOption(option2, true);
+//  }
   
   $('#calculator-btn').on('click', function () {
     //计算过程
